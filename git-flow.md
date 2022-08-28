@@ -23,14 +23,14 @@
     - [Démarrer une release](#démarrer-une-release)
     - [Terminer une release](#terminer-une-release)
   - [Hotfix / Bugfix](#hotfix--bugfix)
-    - [Demarrer un hotfix](#demarrer-un-hotfix)
+    - [Démarrer un hotfix](#démarrer-un-hotfix)
     - [Terminer un hotfix](#terminer-un-hotfix)
   - [Le flux global de Gitflow](#le-flux-global-de-gitflow)
   - [resumé des commandes](#resumé-des-commandes)
   - [pro & cons](#pro--cons)
   - [Pourquoi j'utilise git flow](#pourquoi-jutilise-git-flow)
   - [cheatsheet](#cheatsheet)
-  - [References](#references)
+  - [Références](#références)
   - [alternative à git flow](#alternative-à-git-flow)
 
 ## Introduction
@@ -202,7 +202,7 @@ apt-get install git-flow
 
 ## Hotfix / Bugfix
 
-### Demarrer un hotfix
+### Démarrer un hotfix
 
 ![start-hotfix](./img/start-hotfix-git-flow-cheatsheet.png)
 
@@ -274,7 +274,7 @@ git flow hotfix finish VERSION
 - [aide mémoire](https://danielkummer.github.io/git-flow-cheatsheet/)
 - [au quotidien](https://github.com/Beef-Bridge/Aide-memoire-Git-GitFlow-au-quotidien)
 
-## References
+## Références
 
 - [step by step git flow](https://endjin.com/blog/2013/04/a-step-by-step-guide-to-using-gitflow-with-teamcity-part-3-gitflow-commands)
 - [git flow cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/)
