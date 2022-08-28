@@ -30,7 +30,7 @@
   - [pro & cons](#pro--cons)
   - [Pourquoi j'utilise git flow](#pourquoi-jutilise-git-flow)
   - [cheatsheets](#cheatsheets)
-  - [References](#references)
+  - [Références](#références)
   - [alternative à git flow](#alternative-à-git-flow)
 
 ## Introduction
@@ -273,7 +273,7 @@ git flow hotfix finish VERSION
 - [aide mémoire](https://danielkummer.github.io/git-flow-cheatsheet/)
 - [au quotidien](https://github.com/Beef-Bridge/Aide-memoire-Git-GitFlow-au-quotidien)
 
-## References
+## Références
 
 - [step by step git flow](https://endjin.com/blog/2013/04/a-step-by-step-guide-to-using-gitflow-with-teamcity-part-3-gitflow-commands)
 - [git flow cheatsheet](https://danielkummer.github.io/git-flow-cheatsheet/)
