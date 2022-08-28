@@ -138,7 +138,7 @@ git flow init [-d]
 
 ### Démarrer une feature
 
-La nouvelle est créée à partir de la branche develop.
+La nouvelle feature est créée à partir de la branche develop.
 
 ![start-feature](./img/start-feature-git-flow-cheatsheet.png)
 
