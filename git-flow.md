@@ -21,7 +21,7 @@
       - [track origin](#track-origin)
   - [Release](#release)
     - [Démarrer une release](#démarrer-une-release)
-  - [Terminer une release](#terminer-une-release)
+    - [Terminer une release](#terminer-une-release)
   - [Hotfix / Bugfix](#hotfix--bugfix)
     - [Demarrer un hotfix](#demarrer-un-hotfix)
     - [Terminer un hotfix](#terminer-un-hotfix)
@@ -192,7 +192,7 @@ On part de la branche develop pour créer une release
 git flow release start RELEASE [BASE]
 ```
 
-## Terminer une release
+### Terminer une release
 
 ![finish-release](./img/finish-release-git-flow-cheatsheet.png)
 
