@@ -3,7 +3,7 @@
 - [Table of Contents](#table-of-contents)
   - [Introduction](#introduction)
   - [Le modèle de branches de git flow](#le-modèle-de-branches-de-git-flow)
-    - [La branche main](#la-branche-main)
+    - [La branche main / master (nouvelle version)](#la-branche-main--master-nouvelle-version)
     - [La branche develop](#la-branche-develop)
     - [La branche hotfix](#la-branche-hotfix)
     - [La branche feature](#la-branche-feature)
@@ -22,7 +22,7 @@
   - [Release](#release)
     - [Démarrer une release](#démarrer-une-release)
   - [Terminer une release](#terminer-une-release)
-  - [Hotfix](#hotfix)
+  - [Hotfix / Bugfix](#hotfix--bugfix)
     - [Demarrer un hotfix](#demarrer-un-hotfix)
     - [Terminer un hotfix](#terminer-un-hotfix)
   - [Le flux global de Gitflow](#le-flux-global-de-gitflow)
@@ -61,7 +61,7 @@ Toutes les commandes courantes de git sont toujours accessibles et utilisables.
 
 - Au lieu d'une seule branche main, ce workflow utilise deux branches pour sauvegarder l'historique du projet.
 
-### La branche main
+### La branche main / master (nouvelle version)
 
 - Branche de 'sauvegarde' principale. On ne développe jamais sur cette branche. cette branche recevra directement les nouvelles version du code depuis le branche release.
 
@@ -200,7 +200,8 @@ git flow release start RELEASE [BASE]
 apt-get install git-flow
 ```
 
-## Hotfix
+## Hotfix / Bugfix
+
 ### Demarrer un hotfix
 
 ![start-hotfix](./img/start-hotfix-git-flow-cheatsheet.png)
