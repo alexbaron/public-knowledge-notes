@@ -23,13 +23,13 @@
     - [Démarrer une release](#démarrer-une-release)
     - [Terminer une release](#terminer-une-release)
   - [Hotfix / Bugfix](#hotfix--bugfix)
-    - [Demarrer un hotfix](#demarrer-un-hotfix)
+    - [Démarrer un hotfix](#démarrer-un-hotfix)
     - [Terminer un hotfix](#terminer-un-hotfix)
   - [Le flux global de Gitflow](#le-flux-global-de-gitflow)
-  - [resumé des commandes](#resumé-des-commandes)
+  - [résumé des commandes](#résumé-des-commandes)
   - [pro & cons](#pro--cons)
   - [Pourquoi j'utilise git flow](#pourquoi-jutilise-git-flow)
-  - [cheatsheet](#cheatsheet)
+  - [cheatsheets](#cheatsheets)
   - [References](#references)
   - [alternative à git flow](#alternative-à-git-flow)
 
@@ -202,7 +202,7 @@ apt-get install git-flow
 
 ## Hotfix / Bugfix
 
-### Demarrer un hotfix
+### Démarrer un hotfix
 
 ![start-hotfix](./img/start-hotfix-git-flow-cheatsheet.png)
 
@@ -228,7 +228,7 @@ git flow hotfix finish VERSION
 6. Si un problème est détecté dans la branche main, une branche hotfix est créée à partir de main.
 7. Une fois la branche hotfix terminée, elle est mergée dans develop et dans main.
 
-## resumé des commandes
+## résumé des commandes
 
 ![image-info](./img/git-flow-commands.png)
 
@@ -264,12 +264,11 @@ git flow hotfix finish VERSION
 
 ## Pourquoi j'utilise git flow
 
-- On garde le contole de ce qui est en production
+- On garde le contrôle de ce qui est en production
 - Facile a mettre en oeuvres
 - Contient des commandes simples pour un usage quotidien
 
-
-## cheatsheet
+## cheatsheets
 
 - [aide mémoire](https://danielkummer.github.io/git-flow-cheatsheet/)
 - [au quotidien](https://github.com/Beef-Bridge/Aide-memoire-Git-GitFlow-au-quotidien)
