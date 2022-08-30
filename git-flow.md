@@ -1,6 +1,6 @@
-# Table of Contents
+# Sommaire
 
-- [Table of Contents](#table-of-contents)
+- [Sommaire](#sommaire)
   - [Introduction](#introduction)
   - [Le modèle de branches de git flow](#le-modèle-de-branches-de-git-flow)
     - [La branche main / master (nouvelle version)](#la-branche-main--master-nouvelle-version)
@@ -41,7 +41,7 @@ Il existe plusieurs modèles de branches autre que Git flow. Chacun répond à d
 
 - MVP (Minimum Viable product) => GitHub Flow
 - Version simple dans un logiciel simple de production => Trunk based development
-- Plusieurs versions en production => git flow
+- Plusieurs versions en production => Git flow
 - Version unique en production mais logiciel très complexe => Gitlab-flow
 
 Le modèle de branches de gitflow est destiné à des projets longs et/ou qui devront évoluer et être maintenus à travers des releases.
@@ -140,7 +140,7 @@ git flow init [-d]
 
 La nouvelle feature est créée à partir de la branche develop.
 
-![start-feature](./img/start-feature-git-flow-cheatsheet.png)
+![start-feature](./img/gitflow/start-feature-git-flow-cheatsheet.png)
 
 ``` sh
 git flow feature start MYFEATURE
@@ -148,7 +148,7 @@ git flow feature start MYFEATURE
 
 ### Publier une feature
 
-![publish-feature](./img/publish-feature-git-flow-cheatsheet.png)
+![publish-feature](./img/gitflow/publish-feature-git-flow-cheatsheet.png)
 
 ``` sh
 git flow feature publish MYFEATURE
@@ -156,7 +156,7 @@ git flow feature publish MYFEATURE
 
 ### Terminer une feature
 
-![finish-feature](./img/finish-feature-git-flow-cheatsheet.png)
+![finish-feature](./img/gitflow/finish-feature-git-flow-cheatsheet.png)
 
 La feature sera mergée sur la branch develop
 
@@ -166,7 +166,7 @@ git flow feature finish MYFEATURE
 
 ### Checkout
 
-![getting-feature](./img/getting-feature-git-flow-cheatsheet.png)
+![getting-feature](./img/gitflow/getting-feature-git-flow-cheatsheet.png)
 
 #### Publier par un autre utilisateur
 
@@ -186,7 +186,7 @@ git flow feature track MYFEATURE
 
 On part de la branche develop pour créer une release
 
-![start-release](./img/start-release-git-flow-cheatsheet.png)
+![start-release](./img/gitflow/start-release-git-flow-cheatsheet.png)
 
 ``` sh
 git flow release start RELEASE [BASE]
@@ -194,7 +194,7 @@ git flow release start RELEASE [BASE]
 
 ### Terminer une release
 
-![finish-release](./img/finish-release-git-flow-cheatsheet.png)
+![finish-release](./img/gitflow/finish-release-git-flow-cheatsheet.png)
 
 ``` sh
 apt-get install git-flow
@@ -204,7 +204,7 @@ apt-get install git-flow
 
 ### Démarrer un hotfix
 
-![start-hotfix](./img/start-hotfix-git-flow-cheatsheet.png)
+![start-hotfix](./img/gitflow/start-hotfix-git-flow-cheatsheet.png)
 
 ``` sh
 git flow hotfix start VERSION
@@ -212,7 +212,7 @@ git flow hotfix start VERSION
 
 ### Terminer un hotfix
 
-![finish-hotfix](./img/finish-hotfix-git-flow-cheatsheet.png)
+![finish-hotfix](./img/gitflow/finish-hotfix-git-flow-cheatsheet.png)
 
 ``` sh
 git flow hotfix finish VERSION
@@ -230,7 +230,7 @@ git flow hotfix finish VERSION
 
 ## resumé des commandes
 
-![image-info](./img/git-flow-commands.png)
+![image-info](./img/gitflow/git-flow-commands.png)
 
 | Je veux | sur quelle branche | faire quoi | identifiant |
 |---|---|---|---|
