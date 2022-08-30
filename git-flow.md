@@ -26,12 +26,12 @@
     - [Démarrer un hotfix](#démarrer-un-hotfix)
     - [Terminer un hotfix](#terminer-un-hotfix)
   - [Le flux global de Gitflow](#le-flux-global-de-gitflow)
-  - [resumé des commandes](#resumé-des-commandes)
+  - [Résumé des commandes](#résumé-des-commandes)
   - [pro & cons](#pro--cons)
   - [Pourquoi j'utilise git flow](#pourquoi-jutilise-git-flow)
-  - [cheatsheet](#cheatsheet)
+  - [Cheatsheet](#cheatsheet)
   - [Références](#références)
-  - [alternative à git flow](#alternative-à-git-flow)
+  - [Alternatives à git flow](#alternatives-à-git-flow)
 
 ## Introduction
 
@@ -228,7 +228,7 @@ git flow hotfix finish VERSION
 6. Si un problème est détecté dans la branche main, une branche hotfix est créée à partir de main.
 7. Une fois la branche hotfix terminée, elle est mergée dans develop et dans main.
 
-## resumé des commandes
+## Résumé des commandes
 
 ![image-info](./img/gitflow/git-flow-commands.png)
 
@@ -269,7 +269,7 @@ git flow hotfix finish VERSION
 - Contient des commandes simples pour un usage quotidien
 
 
-## cheatsheet
+## Cheatsheet
 
 - [aide mémoire](https://danielkummer.github.io/git-flow-cheatsheet/)
 - [au quotidien](https://github.com/Beef-Bridge/Aide-memoire-Git-GitFlow-au-quotidien)
@@ -283,8 +283,9 @@ git flow hotfix finish VERSION
 - [ultimate guide to agile git branching workflows with drupal](https://evolvingweb.ca/blog/ultimate-guide-agile-git-branching-workflows-drupal#gitbranchingstrat)
 - [ultimate guide to agile git branching workflows with drupal](https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/init-Gitflow-example-workflow-tutorial)
 
-## alternative à git flow
+## Alternatives à git flow
 
+- (Best Git branching strategy)[https://www.gitkraken.com/learn/git/best-practices/git-branch-strategy]
 - (GitHub Flow)[https://docs.github.com/en/get-started/quickstart/github-flow]
 - (Trunk based development)[https://paulhammant.com/2013/04/05/what-is-trunk-based-development/]
 - (Oneflow)[https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow]
