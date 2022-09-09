@@ -12,6 +12,7 @@
   - [Installation de git-flow](#installation-de-git-flow)
     - [Prérequis](#prérequis)
   - [Initialiser un projet avec git flow](#initialiser-un-projet-avec-git-flow)
+  - [Publier les branches par defaut (master/develop)](#publier-les-branches-par-defaut-masterdevelop)
   - [Feature](#feature)
     - [Démarrer une feature](#démarrer-une-feature)
     - [Publier une feature](#publier-une-feature)
@@ -115,24 +116,30 @@ apt-get install git-flow
 l'initialisation d'un projet versionné avec git flow est relativement simple et permet de mettre un place un modèle de branche complet.
 
 1. Créer le repertoire de projet
-2. Initialiser le versioning du project
 
 ```sh
-cd my/project
-git commit -am "Initial commit"
-git remote add origin git@github.com:username/Project-Name.git
-git push -u origin main
+mkdir [nomDossier]
 ```
 
+2. Initialiser le versioning du project
+   1. Creer votre dépôt sur le service de versionning que vous souhaitez (github, bitbucket, gitlab ...)
 Remarque: si le projet git possède déjà son modèle de branche, il n'est pas conseillé d'utiliser git-flow.
 
-3. Initialiser le modèle de branches.
+   2. Initialiser le modèle de branches.
 
 ```sh
 git flow init [-d]
 ```
 
--d => default
+-d => default => les branches par défaut seront créées sans que vous ayez à choisir leur libellé.
+
+## Publier les branches par defaut (master/develop)
+
+```sh
+git remote add origin git@github.com:username/Project-Name.git
+git push -u origin develop
+git push -u origin master
+```
 
 ## Feature
 
@@ -140,7 +147,7 @@ git flow init [-d]
 
 La nouvelle feature est créée à partir de la branche develop.
 
-![start-feature](./img/start-feature-git-flow-cheatsheet.png)
+![start-feature](./img/gitflow/start-feature-git-flow-cheatsheet.png)
 
 ``` sh
 git flow feature start MYFEATURE
@@ -148,7 +155,7 @@ git flow feature start MYFEATURE
 
 ### Publier une feature
 
-![publish-feature](./img/publish-feature-git-flow-cheatsheet.png)
+![publish-feature](./img/gitflow/publish-feature-git-flow-cheatsheet.png)
 
 ``` sh
 git flow feature publish MYFEATURE
@@ -156,7 +163,7 @@ git flow feature publish MYFEATURE
 
 ### Terminer une feature
 
-![finish-feature](./img/finish-feature-git-flow-cheatsheet.png)
+![finish-feature](./img/gitflow/finish-feature-git-flow-cheatsheet.png)
 
 La feature sera mergée sur la branch develop
 
@@ -166,7 +173,7 @@ git flow feature finish MYFEATURE
 
 ### Checkout
 
-![getting-feature](./img/getting-feature-git-flow-cheatsheet.png)
+![getting-feature](./img/gitflow/getting-feature-git-flow-cheatsheet.png)
 
 #### Publier par un autre utilisateur
 
@@ -186,7 +193,7 @@ git flow feature track MYFEATURE
 
 On part de la branche develop pour créer une release
 
-![start-release](./img/start-release-git-flow-cheatsheet.png)
+![start-release](./img/gitflow/start-release-git-flow-cheatsheet.png)
 
 ``` sh
 git flow release start RELEASE [BASE]
@@ -194,7 +201,7 @@ git flow release start RELEASE [BASE]
 
 ### Terminer une release
 
-![finish-release](./img/finish-release-git-flow-cheatsheet.png)
+![finish-release](./img/gitflow/finish-release-git-flow-cheatsheet.png)
 
 ``` sh
 apt-get install git-flow
@@ -204,7 +211,7 @@ apt-get install git-flow
 
 ### Démarrer un hotfix
 
-![start-hotfix](./img/start-hotfix-git-flow-cheatsheet.png)
+![start-hotfix](./img/gitflow/start-hotfix-git-flow-cheatsheet.png)
 
 ``` sh
 git flow hotfix start VERSION
@@ -212,7 +219,7 @@ git flow hotfix start VERSION
 
 ### Terminer un hotfix
 
-![finish-hotfix](./img/finish-hotfix-git-flow-cheatsheet.png)
+![finish-hotfix](./img/gitflow/finish-hotfix-git-flow-cheatsheet.png)
 
 ``` sh
 git flow hotfix finish VERSION
@@ -230,7 +237,7 @@ git flow hotfix finish VERSION
 
 ## resumé des commandes
 
-![image-info](./img/git-flow-commands.png)
+![image-info](./img/gitflow/git-flow-commands.png)
 
 | Je veux | sur quelle branche | faire quoi | identifiant |
 |---|---|---|---|
@@ -289,4 +296,4 @@ git flow hotfix finish VERSION
 - (GitHub Flow)[https://docs.github.com/en/get-started/quickstart/github-flow]
 - (Trunk based development)[https://paulhammant.com/2013/04/05/what-is-trunk-based-development/]
 - (Oneflow)[https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow]
-- (Gitlab-flow)[https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/]
+- (Gitlab-flow)[https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/] 
