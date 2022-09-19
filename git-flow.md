@@ -204,7 +204,7 @@ git flow release start RELEASE [BASE]
 ![finish-release](./img/gitflow/finish-release-git-flow-cheatsheet.png)
 
 ``` sh
-apt-get install git-flow
+git flow release finsih RELEASE
 ```
 
 ## Hotfix / Bugfix
