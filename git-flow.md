@@ -19,9 +19,11 @@
     - [Terminer une feature](#terminer-une-feature)
     - [Checkout](#checkout)
       - [Publier par un autre utilisateur](#publier-par-un-autre-utilisateur)
-      - [track origin](#track-origin)
+      - [Track origin](#track-origin)
   - [Release](#release)
     - [Démarrer une release](#démarrer-une-release)
+    - [Publier une release](#publier-une-release)
+      - [track a release](#track-a-release)
     - [Terminer une release](#terminer-une-release)
   - [Hotfix / Bugfix](#hotfix--bugfix)
     - [Démarrer un hotfix](#démarrer-un-hotfix)
@@ -181,7 +183,7 @@ git flow feature finish MYFEATURE
 git flow feature pull origin MYFEATURE
 ```
 
-#### track origin
+#### Track origin
 
 ``` sh
 git flow feature track MYFEATURE
@@ -197,6 +199,20 @@ On part de la branche develop pour créer une release
 
 ``` sh
 git flow release start RELEASE [BASE]
+```
+
+### Publier une release
+
+C'est utile au cas ou d'autre devs doivent ajouter des modifications dans le tags (prévisionnel)
+
+``` sh
+git flow release publish RELEASE
+```
+
+#### track a release
+
+``` sh
+git flow release track RELEASE
 ```
 
 ### Terminer une release
@@ -296,4 +312,4 @@ git flow hotfix finish VERSION
 - (GitHub Flow)[https://docs.github.com/en/get-started/quickstart/github-flow]
 - (Trunk based development)[https://paulhammant.com/2013/04/05/what-is-trunk-based-development/]
 - (Oneflow)[https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow]
-- (Gitlab-flow)[https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/] 
+- (Gitlab-flow)[https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/]
