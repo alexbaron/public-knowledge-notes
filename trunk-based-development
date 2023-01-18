@@ -1,0 +1,45 @@
+# Trunk Base Development
+
+- [Trunk Base Development](#trunk-base-development)
+  - [introduction](#introduction)
+  - [Avantages](#avantages)
+  - [Inconvénients](#inconvénients)
+  - [Trunk-based development and feature flags (modules)](#trunk-based-development-and-feature-flags-modules)
+  - [references](#references)
+
+## introduction
+
+Le développement basé sur le tronc est une pratique et non un modèle de branches. Les développeurs mergent des petites mises à jour fréquentes vers la branche principale ou une autre branche considérée comme principale.
+Les développeurs travaillent à partir d'une copie de la branche principale plutôt que sur des branches 'feature' qui auraient des durée de vie longue.
+
+On utilisera cette pratique dans le cadre d'un développement avec un workflow d'intégration continue.
+
+Les développeurs peuvent créer des branches éphémères avec quelques petits commits au lieu de créer des branches de fonctionnalités au long cours.
+
+## Avantages
+
+- Au fur et à mesure que la base de code se complexifie et que l'équipe s'élargit, le développement basé sur le tronc contribue à maintenir la fluidité des livraisons en production.
+
+- L'utilisation de cette méthode de développement encourage tous les changements à revenir rapidement sur la ligne principale. Cela peut éliminer les divergences inutiles. Et avec une équipe plus petite, cela peut réduire les coûts globaux de développement de logiciels. En effet, les administrateurs et les ingénieurs n'essaient pas de maintenir plusieurs branches "principales".
+
+- Because the master branch is the only long-lived branch, all other branches have a defined and limited lifespan. In theory, this can help minimize merge conflicts because no branches are hanging out in development for too long.
+
+- Il permet aux développeurs d'avancer rapidement. Ils n'ont pas besoin de traiter plusieurs étapes avant de fusionner leur code dans la ligne principale. Étant donné que les correctifs sont appliqués directement à la branche principale, votre code doit toujours être prêt pour la production et attendre la prochaine version.
+
+## Inconvénients
+
+- L'un des principaux défis du développement basé sur le tronc est la collision de conflits. Si trop de personnes vérifient leurs modifications dans la ligne principale en même temps, elle sera dans un état constant de désabonnement.
+
+- Les développeurs peuvent finir par trébucher les uns sur les autres et casser constamment les builds. Une solution de contournement populaire (mais fastidieuse) consiste à utiliser des bascules de fonctionnalités dans votre code. Cela ajoute son propre niveau de complexité et de surcharge.
+
+- Personne n'a le contrôle sur ce qui est modifié dans votre base de code. Il est impossible de séparer le code mature du code immature. Pour mettre en œuvre ce modèle, vous souhaiterez n'avoir que des développeurs expérimentés dans votre équipe. Parce qu'un développeur junior pourrait fusionner dans du code immature qui pourrait déstabiliser l'ensemble de votre projet.
+
+## Trunk-based development and feature flags (modules)
+
+
+## references
+
+- [optipedia](https://www.optimizely.com/optimization-glossary/trunk-based-development/)
+- [perforce](https://www.perforce.com/blog/vcs/trunk-based-development-or-feature-driven-development)
+- [atlassian](https://www.atlassian.com/fr/continuous-delivery/continuous-integration/trunk-based-development)
+- [martin fowler](https://martinfowler.com/articles/branching-patterns.html)
