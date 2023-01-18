@@ -149,7 +149,7 @@ git push -u origin master
 
 La nouvelle feature est créée à partir de la branche develop.
 
-![start-feature](./img/gitflow/start-feature-git-flow-cheatsheet.png)
+![start-feature](../img/gitflow/start-feature-git-flow-cheatsheet.png)
 
 ``` sh
 git flow feature start MYFEATURE
@@ -157,7 +157,7 @@ git flow feature start MYFEATURE
 
 ### Publier une feature
 
-![publish-feature](./img/gitflow/publish-feature-git-flow-cheatsheet.png)
+![publish-feature](../img/gitflow/publish-feature-git-flow-cheatsheet.png)
 
 ``` sh
 git flow feature publish MYFEATURE
@@ -165,7 +165,7 @@ git flow feature publish MYFEATURE
 
 ### Terminer une feature
 
-![finish-feature](./img/gitflow/finish-feature-git-flow-cheatsheet.png)
+![finish-feature](../img/gitflow/finish-feature-git-flow-cheatsheet.png)
 
 La feature sera mergée sur la branch develop
 
@@ -175,7 +175,7 @@ git flow feature finish MYFEATURE
 
 ### Checkout
 
-![getting-feature](./img/gitflow/getting-feature-git-flow-cheatsheet.png)
+![getting-feature](../img/gitflow/getting-feature-git-flow-cheatsheet.png)
 
 #### Publier par un autre utilisateur
 
@@ -195,7 +195,7 @@ git flow feature track MYFEATURE
 
 On part de la branche develop pour créer une release
 
-![start-release](./img/gitflow/start-release-git-flow-cheatsheet.png)
+![start-release](../img/gitflow/start-release-git-flow-cheatsheet.png)
 
 ``` sh
 git flow release start RELEASE [BASE]
@@ -217,7 +217,7 @@ git flow release track RELEASE
 
 ### Terminer une release
 
-![finish-release](./img/gitflow/finish-release-git-flow-cheatsheet.png)
+![finish-release](../img/gitflow/finish-release-git-flow-cheatsheet.png)
 
 ``` sh
 git flow release finsih RELEASE
@@ -227,7 +227,7 @@ git flow release finsih RELEASE
 
 ### Démarrer un hotfix
 
-![start-hotfix](./img/gitflow/start-hotfix-git-flow-cheatsheet.png)
+![start-hotfix](../img/gitflow/start-hotfix-git-flow-cheatsheet.png)
 
 ``` sh
 git flow hotfix start VERSION
@@ -235,7 +235,7 @@ git flow hotfix start VERSION
 
 ### Terminer un hotfix
 
-![finish-hotfix](./img/gitflow/finish-hotfix-git-flow-cheatsheet.png)
+![finish-hotfix](../img/gitflow/finish-hotfix-git-flow-cheatsheet.png)
 
 ``` sh
 git flow hotfix finish VERSION
@@ -253,7 +253,7 @@ git flow hotfix finish VERSION
 
 ## resumé des commandes
 
-![image-info](./img/gitflow/git-flow-commands.png)
+![image-info](../img/gitflow/git-flow-commands.png)
 
 | Je veux | sur quelle branche | faire quoi | identifiant |
 |---|---|---|---|
@@ -308,8 +308,8 @@ git flow hotfix finish VERSION
 
 ## Alternatives à git flow
 
-- (Best Git branching strategy)[https://www.gitkraken.com/learn/git/best-practices/git-branch-strategy]
-- (GitHub Flow)[https://docs.github.com/en/get-started/quickstart/github-flow]
-- (Trunk based development)[https://paulhammant.com/2013/04/05/what-is-trunk-based-development/]
-- (Oneflow)[https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow]
-- (Gitlab-flow)[https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/]
+- [Best Git branching strategy](https://www.gitkraken.com/learn/git/best-practices/git-branch-strategy)
+- [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)
+- [Trunk based development](https://paulhammant.com/2013/04/05/what-is-trunk-based-development/)
+- [Oneflow](https://www.endoflineblog.com/oneflow-a-git-branching-model-and-workflow)
+- [Gitlab-flow](https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/)
