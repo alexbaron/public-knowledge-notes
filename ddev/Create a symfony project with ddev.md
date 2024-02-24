@@ -4,7 +4,7 @@
 # Prerequistes
 
 
-* Install ddev 
+* Install ddev
 * Install docker desktop
 * install composer in your linux instance
 
@@ -21,7 +21,7 @@ ddev composer install
 ```
 
 
-Now you can acces your web app 
+Now you can acces your web app
 
 ```sh
 ddev describe
@@ -29,13 +29,13 @@ ddev describe
 
 you should see something like :
 
-![[img_1_20240224155434_b07c3be4.png]]
+![[img/img_1_20240224155434_b07c3be4.png]]
 
 visit the url : https://symfony-demo.ddev.site/
 
 Houra  :
 
-![[img_2_20240224155434_b07c3be4.png]]
+![[img/img_2_20240224155434_b07c3be4.png]]
 
 If you want a specific version of symfony
 
@@ -47,4 +47,4 @@ composer create-project symfony/skeleton ./ "7.0.x-dev" --ignore-platform-req ph
 ```
 Some errors could occured but your goal is to get the correct source code .  Once your run the `ddev start` all will be fine.
 
- 
+
